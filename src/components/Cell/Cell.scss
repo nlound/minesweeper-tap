@@ -1,0 +1,70 @@
+@import "../../variables.scss";
+
+.cell {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  background: $gray-light;
+  border: 2px outset #ffffff;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  &.pressed {
+    border: 2px outset $gray-light;
+    border-style: inset;
+    pointer-events: none;
+  }
+
+  &.flag {
+    color: $flag;
+  }
+
+  &:active {
+    border-style: inset;
+  }
+
+  // remove blue focus indicator on Chrome
+  &:focus {
+    outline-style: none;
+    box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+  }
+  &.disabled {
+    border-style: outset;
+  }
+}
+
+.empty-0 {
+  color: $number-color-0;
+}
+.empty-1 {
+  color: $number-color-1;
+}
+.empty-2 {
+  color: $number-color-2;
+}
+.empty-3 {
+  color: $number-color-3;
+}
+.empty-4 {
+  color: $number-color-4;
+}
+.empty-5 {
+  color: $number-color-5;
+}
+.empty-6 {
+  color: $number-color-6;
+}
+.empty-7 {
+  color: $number-color-7;
+}
+.empty-8 {
+  color: $number-color-8;
+}
+
+.empty-9.pressed {
+  background-color: $bomb;
+}

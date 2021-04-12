@@ -1,0 +1,16 @@
+@import "../../variables.scss";
+
+.mine-field {
+  background: $gray-light;
+  border: 5px outset lighten($gray-light, 20%);
+  padding: 10px;
+  &--container {
+    border: 1px outset $gray-dark;
+  }
+  &--row {
+    display: inline;
+  }
+  &--column {
+    display: flex;
+  }
+}
