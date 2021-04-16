@@ -2,6 +2,7 @@ import "./MineField.scss";
 import Header from "../Header/Header";
 import Cell from "../Cell/Cell";
 import { useState } from "react";
+import React from "react";
 
 const MineField = (props: { mineFieldData: number[][]; settings: any }) => {
   const [gameStatus, setGameStatus] = useState<boolean>(true);
