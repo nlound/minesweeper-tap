@@ -43,7 +43,7 @@ const Cell = (props: {
         {cellRightClicked ? (
           <FontAwesomeIcon icon={faFlag} />
         ) : (
-          cellLeftClicked &&
+          (cellLeftClicked || !props.gameStatus) &&
           (props.number === 9 ? (
             <FontAwesomeIcon icon={faBomb} />
           ) : (
