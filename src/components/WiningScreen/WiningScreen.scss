@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+
+
+$count: 50;
+@for $i from 0 through $count {
+  .bombs-#{$i} {
+    color: rgb(random(255), random(255), random(255));
+    position: fixed;
+    top: random(10) - 20%;
+    left: random(100) + 0%  ;
+    opacity: 1;
+    animation: bombs 2.1s linear infinite;
+    animation-delay: #{random($count) * 0.1}s;
+  }
+}
+
+@keyframes bombs {
+  0% {
+    opacity: 1;
+    transform: translate(0%, 0%);
+    font-size: 1px;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0%, 120vh);
+    opacity: 0;
+    font-size: 40px;
+    }
+}

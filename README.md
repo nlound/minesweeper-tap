@@ -16,7 +16,6 @@ Run `npm start` and open your browser at [http://localhost:3000](http://localhos
 
 - Replay button.
 - Settings tab to define the width and height of the board as well the ammount of bombs.
-- Animation on wining!
 - Clicking a blank tile (or "0"), and all adjacent non-mined cells should automatically be uncovered.
 
 ---
